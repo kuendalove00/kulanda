@@ -21,9 +21,9 @@ export const Login = () => {
           <p className="py-4 text-xs font-semibold">Por favor, insira as suas credenciais!</p>
 
           <div className="flex flex-col mb-4">
-            <label className="text-black font-medium text-sm">Email</label>
+            <label className="text-black font-medium text-sm ">Email</label>
             <input
-              className="border relative bg-gray-100 p-2 rounded-sm"
+              className="border relative bg-gray-100 p-2 rounded-sm focus:outline-indigo-600"
               type="text"
             />
           </div>
@@ -31,7 +31,7 @@ export const Login = () => {
           <div className="flex flex-col mb-4">
             <label className="text-black font-medium text-sm">Palavra-Passe</label>
             <input
-              className="border relative bg-gray-100 p-2 rounded-sm"
+              className="border relative bg-gray-100 p-2 rounded-sm focus:outline-indigo-600"
               type="password"
             />
           </div>
@@ -42,7 +42,7 @@ export const Login = () => {
           </p>
 
           <div className="flex justify-center ">
-            <button className="w-1/2 py-3 mt-8 bg-indigo-800 hover:bg-indigo-500 relative text-white rounded-sm">
+            <button className="w-1/2 py-3 mt-8 bg-indigo-800 hover:bg-indigo-600 relative text-white rounded-sm transition duration-200 ease-in">
               Entrar
             </button>
           </div>
