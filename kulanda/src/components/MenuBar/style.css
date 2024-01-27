@@ -1,0 +1,15 @@
+.logo {
+    margin-top: 20px;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.menuBar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.item {
+    color: rgb(0, 19, 2);
+}
