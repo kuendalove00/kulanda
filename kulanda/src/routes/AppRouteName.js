@@ -14,6 +14,7 @@ export const AppRouteName = {
         list: "/lojas/listagem",
         add: "/lojas/registar",
         edit: "/lojas/editar",
+        customize: "/lojas/customizar"
     },
     category: {
         list: "/categorias/listagem",

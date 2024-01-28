@@ -40,4 +40,4 @@ async function remove(id) {
   }
 }
 
-export const produto = { add, update, remove, getAll };
+export const product = { add, update, remove, getAll };

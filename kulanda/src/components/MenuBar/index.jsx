@@ -83,7 +83,7 @@ const MenuBar = () => {
             icon={<Icon iconName={"fa-user-plus"} />}
           >
             {" "}
-            Nova Loja{" "}
+            Registar Loja{" "}
           </MenuItem>
           <MenuItem
             className="item"
@@ -91,17 +91,17 @@ const MenuBar = () => {
             icon={<Icon iconName={" fa-table-list"} />}
           >
             {" "}
-            Listagem{" "}
+            Listar Lojas{" "}
           </MenuItem>
         </SubMenu>
-        <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Produtos">
+        <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Categorias">
           <MenuItem
             className="item"
             onClick={() => navigate(AppRouteName.product.add)}
             icon={<Icon iconName={"fa-users"} />}
           >
             {" "}
-            Novo Produto{" "}
+            Adicionar Categorias{" "}
           </MenuItem>
           <MenuItem
             className="item"
@@ -109,11 +109,29 @@ const MenuBar = () => {
             icon={<Icon iconName={"fa-users"} />}
           >
             {" "}
-            Listagem{" "}
+            Listar Categorias{" "}
           </MenuItem>
         </SubMenu>
-        <SubMenu icon={<Icon iconName={"fa-chart-pie"} />} label="Relatórios">
+
+        <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Subcategorias">
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.product.add)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Adicionar Subcategorias{" "}
+          </MenuItem>
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.product.list)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Listar subcategorias{" "}
+          </MenuItem>
         </SubMenu>
+        
         <MenuItem
           className="item"
           onClick={() => navigate(AppRouteName.home)}

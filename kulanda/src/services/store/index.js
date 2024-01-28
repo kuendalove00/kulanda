@@ -10,9 +10,39 @@ async function add(data = {}) {
   }
 }
 
+async function addCustomization(data = {}) {
+  try {
+    const response = await axiosInstance.post("customization", data);
+
+    return response;
+  } catch (error) {
+    return error?.response;
+  }
+}
+
 async function update(id, data = {}) {
   try {
     const response = await axiosInstance.put(`store/${id}`, data);
+
+    return response;
+  } catch (error) {
+    return error?.response;
+  }
+}
+
+async function updateCustomization(id, data = {}) {
+  try {
+    const response = await axiosInstance.put(`customization/${id}`, data);
+
+    return response;
+  } catch (error) {
+    return error?.response;
+  }
+}
+
+async function getCustomization(id) {
+  try {
+    const response = await axiosInstance.get(`customization/${id}`);
 
     return response;
   } catch (error) {
@@ -40,4 +70,4 @@ async function remove(id) {
   }
 }
 
-export const store = { add, update, remove, getAll };
+export const store = { add, update, remove, getAll, getCustomization, addCustomization, updateCustomization };
