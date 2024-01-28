@@ -1,5 +1,5 @@
-import { loja } from "./loja";
-import { produto } from "./produto";
+import { loja } from "./store";
+import { produto } from "./product";
 import { auth } from "./auth";
 
 export const service = { 
