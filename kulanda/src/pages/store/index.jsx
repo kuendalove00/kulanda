@@ -22,7 +22,7 @@ export const PublicStore = (props) => {
                     <h1 className="box-title-one">{`<<`}AQUI VOCÊ ENCONTRA TUDO{`>>`}</h1>
                     <h1 className="box-title-two">Compra e Vende Rápido</h1>
                     <h1 className="box-title-four">Loja Mario Fashion</h1>
-                    <button className="box-btn">Login</button>
+                    <a href="/store/login/store_id" className="box-btn">Login</a>
                 </div>
             </section>
             <section id="products">
