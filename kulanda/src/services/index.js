@@ -16,5 +16,4 @@ export const service = {
     subcategory,
     brand,
     model
-
 };

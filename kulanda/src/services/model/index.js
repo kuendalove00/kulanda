@@ -40,4 +40,4 @@ async function add(data = {}) {
     }
   }
   
-  export const brand = { add, update, remove, getAll };
+  export const model = { add, update, remove, getAll };

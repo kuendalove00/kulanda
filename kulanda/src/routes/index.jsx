@@ -6,9 +6,9 @@ import { Home } from "../pages/admin/home/index";
 
 //Admin 
 import { AddStore } from "../pages/admin/store/add/index";
-import { ListStore } from "../page/admin/store/list/index";
+import { ListStore } from "./../pages/admin/store/list";
 import { AddCategory } from "../pages/admin/category/add/index";
-import { ListCategory } from "../page/admin/category/list/index";
+import { ListCategory } from "./../pages/admin/category/list";
 import { AddCustomization } from "../pages/admin/customization/add/index";
 
 import { AddProduct } from "../pages/owner/product/add/index";
@@ -19,12 +19,16 @@ import { AddModel} from "../pages/owner/model/add/index";
 import { ListModel } from "../pages/owner/model/list/index";
 import { AddSubcategory } from "../pages/owner/subcategory/add/index";
 import { ListSubcategory } from "../pages/owner/subcategory/list/index";
+import { PublicStore } from "../pages/store";
+import { LoginStore } from "../pages/loginStore";
 
 
 export const AppRoutes = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes> 
+        <Route path={AppRouteName.storeLogin} element={<LoginStore />} />
+        <Route path={AppRouteName.storeCliente} element={<PublicStore />} />
         <Route path={AppRouteName.index} element={<Login />} />
         <Route path={AppRouteName.login} element={<Login />} />
         <Route path={AppRouteName.home} element={<Home />} />

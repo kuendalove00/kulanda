@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const AddStore = () => {
+export const AddCategory = () => {
   return (
     <div className="relative w-full h-screen">
       <img
