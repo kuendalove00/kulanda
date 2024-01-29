@@ -5,10 +5,10 @@ import { Login } from "../pages/login/index";
 import { Home } from "../pages/admin/home/index";
 
 //Admin 
-import { AddStore } from "../pages/admin/store/add/index";
-import { ListStore } from "../page/admin/store/list/index";
+import { AddStore } from "../pages/admin/store/add";
+import { ListStore } from "../pages/admin/store/list";
 import { AddCategory } from "../pages/admin/category/add/index";
-import { ListCategory } from "../page/admin/category/list/index";
+import { ListCategory } from "../pages/admin/category/list/index"
 import { AddCustomization } from "../pages/admin/customization/add/index";
 
 import { AddProduct } from "../pages/owner/product/add/index";

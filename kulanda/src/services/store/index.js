@@ -22,7 +22,7 @@ async function addCustomization(data = {}) {
 
 async function update(id, data = {}) {
   try {
-    const response = await axiosInstance.put(`store/${id}`, data);
+    const response = await axiosInstance.patch(`store/${data.id}`, data);
 
     return response;
   } catch (error) {
@@ -30,9 +30,9 @@ async function update(id, data = {}) {
   }
 }
 
-async function updateCustomization(id, data = {}) {
+async function updateCustomization(data = {}) {
   try {
-    const response = await axiosInstance.put(`customization/${id}`, data);
+    const response = await axiosInstance.patch(`customization/${data.id}`, data);
 
     return response;
   } catch (error) {

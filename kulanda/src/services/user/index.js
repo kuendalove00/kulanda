@@ -12,7 +12,7 @@ async function add(data = {}) {
 
 async function update(data = {}) {
   try {
-    const response = await axiosInstance.put("user", data);
+    const response = await axiosInstance.patch(`user/${data.id}`, data);
 
     return response;
   } catch (error) {

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const AppRouteName = {
     other: "*",
-    index: "/login",
+    index: "/",
     login: "/login",
     home: "/inicio",
     product: {

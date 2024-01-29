@@ -2,7 +2,7 @@ import { axiosInstance } from "../../apis/axios";
 
 async function add(data = {}) {
     try {
-      const response = await axiosInstance.post("brand", data);
+      const response = await axiosInstance.post("model", data);
   
       return response;
     } catch (error) {
@@ -10,9 +10,9 @@ async function add(data = {}) {
     }
   }
   
-  async function update(id, data = {}) {
+  async function update(data = {}) {
     try {
-      const response = await axiosInstance.put(`brand/${id}`, data);
+      const response = await axiosInstance.patch(`model/${data.id}`, data);
   
       return response;
     } catch (error) {
@@ -22,7 +22,7 @@ async function add(data = {}) {
   
   async function getAll() {
     try {
-      const response = await axiosInstance.get("brand");
+      const response = await axiosInstance.get("model");
   
       return response;
     } catch (error) {
@@ -32,7 +32,7 @@ async function add(data = {}) {
   
   async function remove(id) {
     try {
-      const response = await axiosInstance.delete(`brand/${id}`);
+      const response = await axiosInstance.delete(`model/${id}`);
   
       return response;
     } catch (error) {
@@ -40,4 +40,4 @@ async function add(data = {}) {
     }
   }
   
-  export const brand = { add, update, remove, getAll };
+  export const model = { add, update, remove, getAll };

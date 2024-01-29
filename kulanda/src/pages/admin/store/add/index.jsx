@@ -2,13 +2,7 @@ import React from 'react'
 
 export const AddStore = () => {
   return (
-    <div className="relative w-full h-screen">
-      <img
-        className="absolute bg-[#f1f5f9] w-full h-full object-cover -z-10"
-        alt=""
-      />
-
-      <div className="flex justify-center items-center h-full">
+    <div className="flex justify-center items-center h-full">
         <form
           className=" w-1/2 mx-auto bg-white py-10 px-8 rounded-md shadow-md"
           action=""
@@ -61,6 +55,5 @@ export const AddStore = () => {
           </div>
         </form>
       </div>
-    </div>
   )
 }

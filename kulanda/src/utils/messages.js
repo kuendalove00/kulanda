@@ -13,35 +13,65 @@ export const appMessages = {
     loginError: "Falha ao realizar o login, tente novamente mais tarde!",
     invalidCredentials: "Credenciais incorrectas!",
   },
-  bodies: {
-    registered: "Novo orgão adicionado",
-    updated: "Orgão atualizado com sucesso",
-    failed: "Erro ao registar orgão",
+  category: {
+    updateSuccess: "Categoria editada com sucesso!",
+      updateError: "Falha ao editar o categoria, tente novamente mais tarde!",
+      registerSuccess: "Categoria registrado com sucesso!",
+      registerError:
+        "Falha ao registrar o categoria, tente novamente mais tarde!",
+      registerTitle: "Registar Categoria",
+      updateTitle: "Editar Categoria",
   },
-  functions: {
-    registered: "Nova função adicionada",
-    updated: "Função atualizada com sucesso",
-    failed: "Erro ao registar função",
+  
+  subcategory: {
+    updateSuccess: "Subcategoria editada com sucesso!",
+    updateError: "Falha ao editar a subcategoria, tente novamente mais tarde!",
+    registerSuccess: "Subcategoria registrado com sucesso!",
+    registerError:
+      "Falha ao registrar a subcategoria, tente novamente mais tarde!",
+    registerTitle: "Registar Subcategoria",
+    updateTitle: "Editar Subcategoria",
   },
-  core: {
-    registered: "Novo núcleo adicionado",
-    updated: "Núcleo atualizado com sucesso",
-    failed: "Erro ao registar núcleo",
+  brand: {
+    updateSuccess: "Marca editada com sucesso!",
+    updateError: "Falha ao editar o marca, tente novamente mais tarde!",
+    registerSuccess: "Marca registrado com sucesso!",
+    registerError:
+      "Falha ao registrar o marca, tente novamente mais tarde!",
+    registerTitle: "Registar Marca",
+    updateTitle: "Editar Marca",
   },
-  local: {
-    registered: "Novo Comité Local adicionado",
-    updated: "Comité Local atualizado com sucesso",
-    failed: "Erro ao registar Comité Local",
+  model: {
+    updateSuccess: "Modelo editada com sucesso!",
+    updateError: "Falha ao editar o modelo, tente novamente mais tarde!",
+    registerSuccess: "Modelo registrado com sucesso!",
+    registerError:
+      "Falha ao registrar o modelo, tente novamente mais tarde!",
+    registerTitle: "Registar Modelo",
+    updateTitle: "Editar Modelo",
   },
-  zonal: {
-    registered: "Novo Comité Zonal adicionado",
-    updated: "Comité Zonal atualizado com sucesso",
-    failed: "Erro ao registar Comité Zonal",
+  customization: {
+    registered: "Nova customização efectuada",
+    updated: "customização atualizada com sucesso",
+    failed: "Erro ao efectuar customização",
   },
-  sectorial: {
-    registered: "Novo Comité Sectorial adicionado",
-    updated: "Comité Sectorial atualizado com sucesso",
-    failed: "Erro ao registar Comité Sectorial",
+  store: {
+    updateSuccess: "Loja editada com sucesso!",
+    updateError: "Falha ao editar a loja, tente novamente mais tarde!",
+    registerSuccess: "Loja registrado com sucesso!",
+    registerError:
+      "Falha ao registrar a loja, tente novamente mais tarde!",
+    registerTitle: "Registar Loja",
+    updateTitle: "Editar Loja",
+  },
+  product: {
+    updateSuccess: "Produto editado com sucesso!",
+    updateError: "Falha ao editar o produto, tente novamente mais tarde!",
+    registerSuccess: "Produto registrado com sucesso!",
+    registerError:
+      "Falha ao registrar o produto, tente novamente mais tarde!",
+    registerTitle: "Registar Produto",
+    updateTitle: "Editar Produto",
   }
 
 }

@@ -97,7 +97,7 @@ const MenuBar = () => {
         <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Categorias">
           <MenuItem
             className="item"
-            onClick={() => navigate(AppRouteName.product.add)}
+            onClick={() => navigate(AppRouteName.category.add)}
             icon={<Icon iconName={"fa-users"} />}
           >
             {" "}
@@ -105,7 +105,7 @@ const MenuBar = () => {
           </MenuItem>
           <MenuItem
             className="item"
-            onClick={() => navigate(AppRouteName.product.list)}
+            onClick={() => navigate(AppRouteName.category.list)}
             icon={<Icon iconName={"fa-users"} />}
           >
             {" "}
@@ -116,7 +116,7 @@ const MenuBar = () => {
         <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Subcategorias">
           <MenuItem
             className="item"
-            onClick={() => navigate(AppRouteName.product.add)}
+            onClick={() => navigate(AppRouteName.subcategory.add)}
             icon={<Icon iconName={"fa-users"} />}
           >
             {" "}
@@ -124,11 +124,68 @@ const MenuBar = () => {
           </MenuItem>
           <MenuItem
             className="item"
-            onClick={() => navigate(AppRouteName.product.list)}
+            onClick={() => navigate(AppRouteName.subcategory.list)}
             icon={<Icon iconName={"fa-users"} />}
           >
             {" "}
             Listar subcategorias{" "}
+          </MenuItem>
+        </SubMenu>
+
+        <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Produtos">
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.product.add)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Adicionar Produtos{" "}
+          </MenuItem>
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.product.list)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Listar Produtos{" "}
+          </MenuItem>
+        </SubMenu>
+
+        <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Marcas">
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.subcategory.add)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Adicionar Marcas{" "}
+          </MenuItem>
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.subcategory.list)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Listar Marcas{" "}
+          </MenuItem>
+        </SubMenu>
+
+        <SubMenu icon={<Icon iconName={"fa-flag"} />} label="Modelos">
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.model.add)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Adicionar Modelos{" "}
+          </MenuItem>
+          <MenuItem
+            className="item"
+            onClick={() => navigate(AppRouteName.model.list)}
+            icon={<Icon iconName={"fa-users"} />}
+          >
+            {" "}
+            Listar Modelos{" "}
           </MenuItem>
         </SubMenu>
         

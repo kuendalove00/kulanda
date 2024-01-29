@@ -10,9 +10,9 @@ async function add(data = {}) {
     }
   }
   
-  async function update(id, data = {}) {
+  async function update( data = {}) {
     try {
-      const response = await axiosInstance.put(`subcategory/${id}`, data);
+      const response = await axiosInstance.patch(`subcategory/${data.id}`, data);
   
       return response;
     } catch (error) {
