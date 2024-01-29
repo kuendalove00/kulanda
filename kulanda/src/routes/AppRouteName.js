@@ -5,6 +5,8 @@ export const AppRouteName = {
     index: "/",
     login: "/login",
     home: "/inicio",
+    storeLogin: "/store/login/:client_id",
+    storeCliente: "/store/:client_id",
     product: {
         list: "/produtos/listagem",
         add: "/produtos/registar",

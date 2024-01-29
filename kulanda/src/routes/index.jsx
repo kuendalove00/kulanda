@@ -19,12 +19,16 @@ import { AddModel} from "../pages/owner/model/add/index";
 import { ListModel } from "../pages/owner/model/list/index";
 import { AddSubcategory } from "../pages/owner/subcategory/add/index";
 import { ListSubcategory } from "../pages/owner/subcategory/list/index";
+import { PublicStore } from "../pages/store";
+import { LoginStore } from "../pages/loginStore";
 
 
 export const AppRoutes = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes> 
+        <Route path={AppRouteName.storeLogin} element={<LoginStore />} />
+        <Route path={AppRouteName.storeCliente} element={<PublicStore />} />
         <Route path={AppRouteName.index} element={<Login />} />
         <Route path={AppRouteName.login} element={<Login />} />
         <Route path={AppRouteName.home} element={<Home />} />
